@@ -3,16 +3,19 @@ import avatar from './image/avatar.jpg';
 
 function SETA(props) {
 
-        let col;
+    let col;
     const [Name,setName]=useState("");
     const [Gender,setGender]=useState("");
-    const [Contact,setContact] = useState("");
-    const [Color,setColor] = useState("cyan");
+   // const [Contact,setContact] = useState("");
+    const contact = useRef()
+   
 
    
          let handleSubmit=()=>{
-            alert( `Congrats on submission of  form ${Name}`)          
+            alert( `Congrats on submission of  form ${Name} and contact is : ${contact.current.value}`)          
         }
+
+        
 
       
   
@@ -38,7 +41,7 @@ function SETA(props) {
 
                         <div class="mb-3">
                             <label  class="form-label">Contact</label>
-                            <input type="text" class="form-control"  value={Contact} onChange={(e)=>setContact(e.target.value)} / >
+                            <input type="text" class="form-control"  ref={contact} value={contact} / >
                         </div>
   
                             <button type="submit" class="btn btn-primary">Submit</button>
@@ -64,7 +67,7 @@ function SETA(props) {
                         </h1>
 
                         <h1>
-                           Contact:  {Contact}
+                           Contact: {contact}
                         </h1>
                         </div>
                     </div>
