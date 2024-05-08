@@ -17,7 +17,7 @@ function SETB(props) {
                     </div>
                     <div className='col-2 mt-5 mx-5 '>
                                 <h1> {props.name}</h1>
-                                <h5>{props.birth}</h5>
+                                <h5>{props.email}</h5>
                     </div>
                     <div className='col-2 mt-5'>
                                 <img src={phone} className='rounded-circle mx-1' style={{ height:'35px' }} />

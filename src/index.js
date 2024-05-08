@@ -4,12 +4,13 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import SETA from './SETA.js';
 import App from './App.js'
+import AXI from './AXI.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <App />
+ <App />
  
   </React.StrictMode>
 );
